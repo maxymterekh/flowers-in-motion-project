@@ -1,5 +1,6 @@
-@import './common';
-@import './example';
+@import "./utils/vars";
+@import './base/common';
+@import './base/example';
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
