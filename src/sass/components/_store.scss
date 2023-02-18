@@ -1,0 +1,28 @@
+.title_store{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 54px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.store_list{
+display: flex;
+flex-wrap: wrap
+}
+
+.flowers_text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+
+color: #000000;
+
+opacity: 0.6;
+}
