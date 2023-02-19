@@ -15,16 +15,6 @@ header {
   color: black;
 }
 
-.header__navigation-a {
-  color: black;
-
-  font-size: 75px;
-}
-
-.header__navigation-e {
-  border-top: 5px solid;
-}
-
 .header__navigation-list {
   display: flex;
   padding-top: 5px;
@@ -37,13 +27,13 @@ header {
 }
 
 .header__contact-div {
+  padding-left: 300px;
   padding-top: 5px;
 }
 
-.header__contact-page {
-  color: black;
-}
+
 
 .header__contact-icon {
-  padding-top: 3px;
+  fill: black;
+  
 }
