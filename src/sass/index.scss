@@ -1,2 +1,9 @@
 @import './common';
-@import './example';
+@import "./base/reset";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/store";
+@import "./components/delivery";
+@import "./components/blog";
+@import "./components/footer";
