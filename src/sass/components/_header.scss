@@ -1,0 +1,49 @@
+header {
+  display: flex;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.header__item-page {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: black;
+}
+
+.header__navigation-a {
+  color: black;
+
+  font-size: 75px;
+}
+
+.header__navigation-e {
+  border-top: 5px solid;
+}
+
+.header__navigation-list {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 220px;
+}
+
+.header__list-item {
+  margin-top: 3px;
+  margin-left: 48px;
+}
+
+.header__contact-div {
+  padding-top: 5px;
+}
+
+.header__contact-page {
+  color: black;
+}
+
+.header__contact-icon {
+  padding-top: 3px;
+}
