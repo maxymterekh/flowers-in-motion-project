@@ -1,9 +1,12 @@
 header {
   display: flex;
+  position: absolute;
 }
 
 .header__navigation {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__item-page {
@@ -14,7 +17,7 @@ header {
   font-size: 20px;
   line-height: 24px;
 
-  color: black;
+  color: white;
 }
 
 .header__navigation-list {
@@ -34,5 +37,5 @@ header {
 }
 
 .header__contact-icon {
-  fill: black;
+  fill: white;
 }
