@@ -1,1 +1,41 @@
+.about__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.22;
+  margin-left: 24px;
+  color: #000000;
+}
 
+// .about__div {
+//   width: 975px;
+//   height: 0px;
+//   margin-left: 30px;
+//   margin-top: 25px;
+//   border: 1px solid #000000;
+// }
+
+.about__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  width: 510px;
+  height: 135px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22;
+  margin-right: 90px;
+  margin-top: 74px;
+  color: #000000;
+}
+
+.about__img {
+  width: 632px;
+  height: 344px;
+  margin-bottom: 40px;
+}
+
+.about__list {
+  list-style: none;
+  display: flex;
+}
