@@ -48,7 +48,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1232px;
+    width: 1280px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -95,29 +95,20 @@ header {
 @media screen and (max-width: 767px) {
   .hero {
     background-color: #FFFFFF;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-left: 49px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../img/hero@1x.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding-bottom: 201px;
     padding-top: 328px;
-    padding-left: 146px;
+    padding-left: 145px;
     padding-right: 145px;
     width: 100%;
   }
-}
-
-.hero .container {
-  display: block;
-  position: relative;
 }
 
 .hero__main-title {
@@ -131,7 +122,7 @@ header {
     font-size: 52px;
     line-height: 63px;
     position: absolute;
-    top: 320px;
+    top: 250px;
     right: 0.2px;
     left: 2px;
   }
@@ -141,7 +132,8 @@ header {
     font-size: 120px;
     line-height: 146px;
     position: absolute;
-    top: 650px;
+    top: 580px;
+    left: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -194,11 +186,9 @@ header {
 .hero-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.hero-list__item {
-  margin-top: 76px;
-}
 @media screen and (max-width: 767px) {
   .hero-list__item {
     margin-right: 14px;
@@ -211,8 +201,19 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .hero-list__item {
-    margin-right: 725px;
+    margin-right: 400px;
     margin-top: 76px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-list__item:nth-child(2) {
+    margin-right: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-list__item:nth-child(2) {
+    margin-right: 20px;
   }
 }
 
@@ -249,6 +250,7 @@ header {
   .hero__second-svg {
     width: 150px;
     height: 150px;
+    fill: black;
   }
 }
 @media screen and (min-width: 1200px) {
