@@ -586,6 +586,10 @@ img {
   }
 }
 
+.blog {
+  margin-left: 24px;
+  margin-right: 24px;
+}
 .blog__title {
   font-family: "Montserrat";
   font-weight: 700;
