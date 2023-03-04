@@ -2,7 +2,7 @@
 <defs>
 <symbol id="icon-close-svg" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 5.333l-21.333 21.333M26.667 26.667v0z"></path>
-<symbol id="icon-Arrow-left" viewBox="0 0 268 32">
+<symbol id="c" viewBox="0 0 268 32">
 <path d="M2.586 14.586c-0.781 0.781-0.781 2.047 0 2.828l12.728 12.728c0.781 0.781 2.047 0.781 2.828 0s0.781-2.047 0-2.828l-11.314-11.314 11.314-11.314c0.781-0.781 0.781-2.047 0-2.828s-2.047-0.781-2.828 0l-12.728 12.728zM4 18h264v-4h-264v4z"></path>
 </symbol>
 <symbol id="icon-Arrow-right" viewBox="0 0 268 32">
