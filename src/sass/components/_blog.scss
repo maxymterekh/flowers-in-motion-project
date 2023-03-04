@@ -1,19 +1,26 @@
 .blog {
+
+  margin-left: 24px;
+  margin-right: 24px;
+
   &__title {
   font-family: 'Montserrat';
   font-weight: 700;
   color: $title-color;
   font-size: 44px;
+  margin-right: 16px;
 }
 
-&__title::after {
-  content: '';
-  position: absolute;
-  bottom: -172%;
-  left: 0, 5;
-  transform: translateY(-50%);
-  width: 87%;
-  border-top: 1px solid black;
+&__center{
+  display: flex;
+}
+
+&__div {
+    width: 97%;
+    height: 0px;
+    margin-left: 7px;
+    margin-top: 25px;
+    border: 1px solid #000000;
 }
 
 &__mini-title {
@@ -22,6 +29,7 @@
   font-weight: 500;
   color: $title-color;
   text-align: center;
+  margin-top: 44px;
 }
 
 &__button {
@@ -38,5 +46,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+  margin-top: 57px;
 }
+}
+
+.swiper {
+  width: 1090px;
+  height: 420px;
+}
+
+.swiper-button-prev{
+  left: 100px;
+}
+
+.swiper-button-next{
+  right: 100px;
 }
