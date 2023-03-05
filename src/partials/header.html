@@ -1,4 +1,4 @@
-<header>
+ <header>
   <div class="container">
     <nav class="header__navigation">
       <a href="/" class="header__navigation-a">
@@ -6,30 +6,65 @@
           <use href="img/svg.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul class="header__navigation-list">
-        <li class="header__list-item">
-          <a href="/" class="header__item-page">Anemone</a>
-        </li>
-        <li class="header__list-item">
-          <a href="/" class="header__item-page">About us</a>
-        </li>
-        <li class="header__list-item">
-          <a href="/" class="header__item-page">Store</a>
-        </li>
-        <li class="header__list-item">
-          <a href="/" class="header__item-page">Delivery</a>
-        </li>
-        <li class="header__list-item">
-          <a href="/" class="header__item-page">Blog</a>
-        </li>
-      </ul>
-      <div class="header__contact-div">
-        <a href="tel:+380991111111" class="header__contact-page">
-          <svg class="header__contact-icon" height="22" width="22">
-            <use href="img/svg.svg#icon-phone"></use>
-          </svg>
-        </a>
-      </div>
-    </nav>
-  </div>
-</header>
+       <div  class="nav-box">
+          <ul  class="navigation__list">
+            <li class="navigation__list--item">
+              <a href="/" class="navigation__item--page">Anemone</a>
+            </li>
+            <li class="navigation__list--item">
+              <a href="/" class="navigation__item--page"
+                >About us</a
+              >
+            </li>
+            <li class="navigation__list--item">
+              <a href="/" class="navigation__item--page">Store</a>
+            </li>
+             <li class="navigation__list--item">
+              <a href="/" class="navigation__item--page">Delivery</a>
+            </li>
+             <li class="navigation__list--item">
+              <a href="/" class="navigation__item--page">Blog</a>
+            </li>
+          </ul>
+         
+        </nav> 
+        <ul class="contact__header--list">
+         
+            <a href="mailto:info@devstudio.com" class="contact__item--link"
+              ><svg class="contact__link--icon" height="20" width="20">
+                <use href="img/svg.svg#icon-phone"></use>
+              </svg>
+              </a>
+         
+        </ul>  
+           <button data-menu-button  type="button" class="header__nav--open">
+            <svg class="header__open--icon">
+                <use href="img/svg.svg#icon-burger" class="icon-menu"></use>
+                <use href="img/svg.svg#icon-close-svg" class="icon-cross"></use>
+            </svg>
+        </button>
+      
+       <div data-menu class="mobile-modal">
+       <ul  class="modal__list">
+            <li class="modal__list--item">
+              <a href="/" class="modal__item--page">Anemone</a>
+            </li>
+            <li class="modal__list--item">
+              <a href="/" class="modal__item--page"
+                >About us</a
+              >
+            </li>
+            <li class="modal__list--item">
+              <a href="/" class="modal__item--page">Store</a>
+            </li>
+             <li class="modal__list--item">
+              <a href="/" class="modal__item--page">Delivery</a>
+            </li>
+             <li class="modal__list--item">
+              <a href="/" class="modal__item--page">Blog</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </div> 
+    </header>
