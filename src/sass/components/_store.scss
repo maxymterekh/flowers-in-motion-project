@@ -17,12 +17,13 @@ font-weight: 700;
 }
 .title_store::after{
 content:'' ;
-margin-top: 30px;
+margin-top: 15px;
 position: absolute;
 border: 1px solid #000000;
 width: 190px;
     @media screen and (min-width: 768px) {
       width: 550px;
+      margin-top: 30px;
 }
     @media screen and (min-width: 1200px) {
       width: 1062px;
@@ -88,10 +89,9 @@ position: absolute;
 margin-top: 20px;
 margin-left: 5px;
 
-border: 1px solid #000000;
-
   @media screen and (min-width: 768px) {
     width: 71px;
+    border: 1px solid #000000;
 }
   @media screen and (min-width: 1200px) {
     width: 300px;
@@ -101,26 +101,24 @@ border: 1px solid #000000;
 .store_button{
   background: #E86F54;
 border-radius: 38px;
+width: 208px;
+height: 44px;padding: 14px 28px;
+gap: 10px;
 border: none;
 color: #FFFFFF;
-  flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 14px 28px;
-width: 208px;
-height: 44px;
-font-size: 20px;
-line-height: 24px;
-gap: 10px;
-margin-right: auto;
-margin-left: auto;
-display: block;
 
     @media screen and (min-width: 768px) {
       width: 280px;
       font-weight: 500;
 font-size: 28px;
       height: 64px;
+      padding: 16px 32px;
 }
 }
 .store_item{
@@ -143,12 +141,7 @@ font-size: 28px;
 
 }
 .store_item:nth-child(2){
-  @media screen and (min-width: 480px) {
-      margin-right:30px; 
-    }
-        @media screen and (min-width: 768px) {
-          margin-right:0px; 
-    }
+  margin-right: 0px;
 }
 .store_item:last-child{
   margin-right: 0px;
