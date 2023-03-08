@@ -280,16 +280,30 @@ header {
   color: #ffffff;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero@2x.jpg);
+  }
+}
 @media screen and (max-width: 767px) {
   .hero {
     background-color: #FFFFFF;
     position: relative;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    background-color: #FFFFFF;
+    position: relative;
+    padding-bottom: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../img/hero@1x.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding-bottom: 201px;
     padding-top: 328px;
@@ -389,7 +403,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .hero-list__item {
-    margin-right: 400px;
+    margin-right: 725px;
     margin-top: 76px;
   }
 }
@@ -965,11 +979,6 @@ img {
   text-align: center;
   margin-top: 44px;
 }
-@media screen and (max-width: 767px) {
-  .blog__mini-title {
-    font-size: 18px;
-  }
-}
 .blog__button {
   display: flex;
   background-color: #E86F54;
@@ -985,15 +994,6 @@ img {
   margin-right: auto;
   margin-bottom: 100px;
   margin-top: 57px;
-}
-@media screen and (max-width: 767px) {
-  .blog__button {
-    width: 170px;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 32px;
-  }
 }
 .swiper {
   width: 1090px;
