@@ -1,18 +1,33 @@
 .hero {
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            
+    background-image:url(../img/hero@2x.jpg) ;
+    }
  
 
     @media  screen and (max-width : 767px) {
     
       background-color: #FFFFFF;
       position: relative;
+      padding-bottom: 150px;
       
     }
+    @media  screen and (max-width : 1200px) {
+    
+      background-color: #FFFFFF;
+      position: relative;
+      padding-bottom: 150px;
+      
+    }
+
+
  
     @media  screen and (min-width :1200px) {
       background-image: url(../img/hero@1x.jpg);
       background-repeat: no-repeat;
 
-     
+      background-position: center;
       
       background-size: cover;
       
@@ -138,7 +153,7 @@
         }
         @media  screen and (min-width :1200px) {
     
-          margin-right: 400px;
+          margin-right: 725px;
           margin-top: 76px;
         }
   }
