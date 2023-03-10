@@ -1,8 +1,15 @@
+.about__container {
+  margin-top: 100px;
+}
+
 .about__title {
   margin-left: 14px;
   margin-right: 14px;
   @media screen and (min-width: 768px) {
     margin-right: 14px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
   }
   @media screen and (min-width: 1200px) {
     font-family: 'Montserrat';
@@ -40,9 +47,13 @@
 
 .about__text {
   margin-bottom: 16px;
+  margin-left: 16px;
+  width: 288px;
+  height: 140px;
   @media screen and (min-width: 768px) {
-    width: 322px;
     margin-right: 54px;
+    margin-top: 56px;
+    margin-left: 24px;
   }
   @media screen and (min-width: 1200px) {
     font-family: 'Montserrat';
@@ -64,11 +75,16 @@
 
 .about__img {
   margin-bottom: 60px;
+  margin-left: 16px;
+  width: 288px;
+  height: 178px;
   @media screen and (min-width: 768px) {
     width: 344px;
+    height: 217px;
   }
   @media screen and (min-width: 1200px) {
     width: 632px;
+    height: 344px;
     margin-bottom: 100px;
   }
 }
