@@ -1,6 +1,5 @@
 .title_store{
- 
-  padding-left: 25px;
+  
   font-family: 'Montserrat';
 font-style: normal;
 color: #000000;
@@ -17,6 +16,7 @@ font-weight: 700;
 }
 .title_store::after{
 content:'' ;
+margin-left: 10px;
 margin-top: 15px;
 position: absolute;
 border: 1px solid #000000;
@@ -26,7 +26,7 @@ width: 190px;
       margin-top: 30px;
 }
     @media screen and (min-width: 1200px) {
-      width: 1062px;
+       width: 1062px
 }
 }
 
@@ -134,7 +134,6 @@ font-size: 28px;
     }
         @media screen and (min-width: 1200px) {
           margin-bottom: 60px;
-          
           width: 600px;
       height: 640px;
     }

@@ -16,6 +16,7 @@
 
 .footer .container {
  display: flex;
+ flex-wrap: wrap;
 }
 
 .footer__logo {
@@ -93,6 +94,12 @@
     }
 }
 
+a[href="mailto:anemonestudio@example.com"]{
+    @media screen and (max-width: 767px) {
+        vorld-wrap:wrap;
+    }
+}
+
 .footer__item {
     margin-bottom: 12px;
 }
@@ -103,6 +110,16 @@
     margin-bottom: 0px;
 } 
 
+.container_side{
+       margin-right: 44px;
+     
+     @media screen and (min-width: 1200px) {
+     margin-right: 96px;
+     }
+}
+.container_side:last-child{
+    margin-right: 0px;
+}
 
 .footer-list-title {
     font-family: 'Inter';
@@ -194,18 +211,5 @@ height: 28px;
     margin-right: 0px;
 }
 
-.footer__networks {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        margin-left: 1px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-left: 74px;
-        
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 216px;
-    }
 
-}
 
