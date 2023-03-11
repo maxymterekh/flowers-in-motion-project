@@ -55,16 +55,14 @@
 
 header {
   position: relative;
-
-  @media screen and (min-width: 320px) {
     padding-bottom: 44px;
-  }
+
 
   @media screen and (min-width: 768px) {
     padding-bottom: 38px;
   }
 
-  
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 64px;
     background-color: #969494;
