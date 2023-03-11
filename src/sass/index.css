@@ -1011,17 +1011,11 @@ img {
     margin-top: 32px;
   }
 }
-.swiper {
-  width: 1090px;
-  height: 420px;
-}
-
-.swiper-button-prev {
-  left: 100px;
-}
-
-.swiper-button-next {
-  right: 100px;
+.carousel {
+  background-color: aqua;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
