@@ -1,8 +1,11 @@
 .about__title {
-  margin-left: 14px;
   margin-right: 14px;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+  color: $title-color;
+  margin-right: 16px;
   @media screen and (min-width: 768px) {
-    margin-right: 14px;
     font-weight: 700;
     font-size: 44px;
     line-height: 54px;
@@ -29,7 +32,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 26px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 // .about__title::after {
 //   width: 538px;
@@ -41,22 +44,31 @@
 
 .about__text {
   margin-bottom: 16px;
-  margin-left: 16px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  width: 288px;
   @media screen and (min-width: 768px) {
-    margin-right: 54px;
+    margin-right: 60px;
     margin-top: 56px;
-    margin-left: 24px;
+    width: 322px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 123px;
   }
   @media screen and (min-width: 1200px) {
     font-family: 'Montserrat';
     font-style: normal;
-
     font-weight: 400;
     font-size: 22px;
     line-height: 1.22;
+    width: 493px;
+    margin-right: 100px;
     color: $title-color;
-    margin-right: 115px;
-    margin-top: 100px;
+    margin-top: 120px;
   }
 }
 
@@ -66,13 +78,13 @@
 }
 
 .about__img {
-  margin-bottom: 60px;
-  // margin-left: 16px;
+  margin-bottom: 50px;
   width: 288px;
   height: 178px;
   @media screen and (min-width: 768px) {
     width: 344px;
     height: 217px;
+    margin-top: 38px;
   }
   @media screen and (min-width: 1200px) {
     width: 632px;
