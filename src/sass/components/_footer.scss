@@ -16,6 +16,21 @@
 
 .footer .container {
  display: flex;
+ flex-wrap: wrap;
+}
+.container_side{
+    margin-right: 44px;  
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 80px;
+    }
+}
+.container_side:last-child{
+    margin-right: 0px;
+}
+
+a[href="mailto:anemonestudio@example.com"]{
+    word-wrap:wrap;
 }
 
 .footer__logo {
@@ -193,19 +208,17 @@ height: 28px;
     margin-bottom: 0px;
     margin-right: 0px;
 }
-
-.footer__networks {
+.footer-networks{
     @media screen and (max-width: 767px) {
         display: flex;
-        margin-left: 1px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-left: 74px;
+       
         
     }
-    @media screen and (min-width: 1200px) {
-        margin-left: 216px;
+    @media screen and (max-width: 1200px) {
+      
+        display: none;
     }
 
 }
+
 
