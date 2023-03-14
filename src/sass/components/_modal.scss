@@ -1,0 +1,87 @@
+.modal-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-left: 16px;
+    color: #000000;
+    @media screen and (min-width: 768px) { 
+    margin-left: 32px;
+    margin-top: 48px;
+font-size: 32px;
+line-height: 39px;
+
+  } 
+}
+.modal-description{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+margin-left: 16px;
+margin-top: 14px;
+font-size: 12px;
+line-height: 15px;
+color: #5C5C5C;
+@media screen and (min-width: 768px) { 
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+    margin-top: 24px;
+
+  } 
+}
+.modal__input-list{
+    margin-left: 16px;
+    @media screen and (min-width: 768px) { 
+        margin-left: 32px;
+    
+      } 
+}
+.cross-svg{
+    border: 2px solid #000000;
+    width: 16px;
+    height: 16px;
+}
+.modal__input{
+  width: 240px;
+  height: 35px;
+  @media screen and (min-width: 768px) { 
+      width: 416px;
+      height: 49px;
+  
+    } 
+}
+.modal__button{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  background: rgba(232, 111, 84, 0.4);
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 240px;
+  margin-top: 24px;
+height: 37px;
+font-size: 14px;
+border: none;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+line-height: 17px;
+      @media screen and (min-width: 768px) {
+        width: 416px;
+        height: 50px;
+        margin-top: 38px;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+  }
+ 
+}
+.modal-list__item{
+  margin-top: 30px;
+}
+.modal_content{
+  max-width: 480px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
