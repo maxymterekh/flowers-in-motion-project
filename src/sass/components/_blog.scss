@@ -116,7 +116,7 @@
 // }
   
   .carousel{
-  background-color: aqua;
+
   width: 390px;
   margin-left: auto;
   margin-right: auto;
@@ -124,6 +124,7 @@
 
 .backdrop{
   position: fixed;
+  z-index: 4;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -131,8 +132,10 @@
   background-color:  rgba(0, 0, 0, 0.2);;
 }
 
-.modal{
+.blog__modal {
   position: absolute;
+  z-index: 3;
+   opacity: 1;
   width: 528px;
   height: 590px;
   transform: translate(-50%, -50%) ;
@@ -153,9 +156,13 @@
   }
 }
 
- .backdrop.is-hidden{
+// .modal{
+//  opacity: 4;
+// }
+
+ .backdrop .is-hidden{
   opacity: 0;
-  pointer-events: none;
+  // pointer-events: none;
  }
 
 .modal__btn{
