@@ -24,48 +24,65 @@
             </div>
     </div> -->
 
-    <div id="carouselExampleControlsNoTouching"  class="carousel slide" data-bs-touch="false">
-  <div class="carousel-inner" >
-    <div class="carousel-item">
-      <img src="img/blog-img1@1x.jpg" class="d-block w-100" alt="flower">
+    <div
+      id="carouselExampleControlsNoTouching"
+      class="carousel slide"
+      data-bs-touch="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="img/blog-img1@1x.jpg" class="d-block w-100" alt="flower" />
+        </div>
+        <div class="carousel-item active">
+          <img src="img/blog-img2@1x.jpg" class="d-block w-100" alt="flower" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/blog-img3@1x.jpg" class="d-block w-100" alt="flower" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h3 class="blog__mini-title">Follow to our newsletter</h3>
+      <button class="blog__button" type="button" data-open-modal>
+        Subscribe
+      </button>
     </div>
-    <div class="carousel-item active">
-      <img src="img/blog-img2@1x.jpg" class="d-block w-100" alt="flower">
-    </div>
-    <div class="carousel-item">
-      <img src="img/blog-img3@1x.jpg" class="d-block w-100" alt="flower">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-
-<div class="blog__modal">
-  <h3 class="blog__mini-title">Follow to our newsletter</h3>
-      <button class="blog__button" type="button" data-open-modal>Subscribe</button>
-          <div class="backdrop is-hidden" data-backdrop>
-            <div class="modal">
-              <button class="modal__close-btn" data-close-modal>
-              </button>
-            <img class="blog__modal-img" src="img/modal@1x.jpg" alt="flowers">
-          <div class="blog__modal-content"> 
+    <div data-backdrop class="blog__modal">
+      <div class="backdrop is-hidden">
+        <div class="modal" >
+          <button type="button" class="modal__close-btn" data-close-modal></button>
+          <img class="blog__modal-img" src="img/modal@1x.jpg" alt="flowers" />
+          <div class="blog__modal-content">
             <h2 class="blog__modal-title">Follow to our newsletter</h2>
-            <p class="blog__modal-text">Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+            <p class="blog__modal-text">
+              Be the first to get exclusive offers and the latest news on our
+              product directly in your box.
+            </p>
             <label>
               <span class="modal__text">Email</span>
               <input class="modal__input" type="text" />
             </label>
             <button class="blog__modal-btn" type="button">Subscribe</button>
-          </div>  
-            </div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
 </section>
