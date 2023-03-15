@@ -1,17 +1,19 @@
 <section class="modal">
+   <div class="modal_content">
     <svg class="cross-svg"><use href="img/svg.svg#icon-close-svg"></use></svg>
     <h2 class="modal-title">Contact us</h2>
     <p class="modal-description">If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
    <ul class="modal__input-list">
     <li class="modal-list__item">
          <label class="modal__label" for="name">Name</label>
-            <input class="modal__input" id="name" type="text">
+            <input class="modal__input" id="name" placeholder="Your name" required type="text">
          </li>
          <li class="modal-list__item">
-            <label class="modal__label" for="email">Email</label>
-               <input class="modal__input" id="email" type="text">
+            <label class="modal__label"  for="email">Email</label>
+               <input class="modal__input" placeholder="Your email" id="email" required type="text">
             </li>
    </ul>
 
    <button class="modal__button" type="submit">Send</button>
+</div>
  </section>
