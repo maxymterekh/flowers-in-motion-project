@@ -1,11 +1,4 @@
 .hero {
-
-  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
-            
-    background-image:url(../img/hero@2x.jpg) ;
-    }
- 
-
     @media  screen and (max-width : 767px) {
     
       background-color: #FFFFFF;
