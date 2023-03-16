@@ -1,5 +1,5 @@
 .blog {
-
+  position: relative;
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 100px;
@@ -122,20 +122,9 @@
   margin-right: auto;
 }
 
-.backdrop{
-  position: fixed;
-  z-index: 4;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color:  rgba(0, 0, 0, 0.2);;
-}
-
 .blog__modal {
   position: absolute;
-  z-index: 3;
-   opacity: 1;
+  z-index: 2;
   width: 528px;
   height: 590px;
   transform: translate(-50%, -50%) ;
@@ -156,13 +145,9 @@
   }
 }
 
-// .modal{
-//  opacity: 4;
-// }
-
- .backdrop .is-hidden{
+ .backdrop.is-hidden{
   opacity: 0;
-  // pointer-events: none;
+  pointer-events: none;
  }
 
 .modal__btn{

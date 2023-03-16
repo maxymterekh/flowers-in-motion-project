@@ -661,7 +661,6 @@ header {
 }
 
 .title_store {
-  padding-left: 25px;
   font-family: "Montserrat";
   font-style: normal;
   color: #000000;
@@ -678,6 +677,7 @@ header {
 
 .title_store::after {
   content: "";
+  margin-left: 10px;
   margin-top: 15px;
   position: absolute;
   border: 1px solid #000000;
@@ -691,7 +691,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .title_store::after {
-    width: 1062px;
+    width: 1052px;
   }
 }
 
@@ -1005,6 +1005,7 @@ img {
 }
 
 .blog {
+  position: relative;
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 100px;
@@ -1083,10 +1084,52 @@ img {
   }
 }
 .carousel {
-  background-color: aqua;
   width: 390px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.blog__modal {
+  position: absolute;
+  z-index: 2;
+  width: 528px;
+  height: 590px;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+}
+@media screen and (max-width: 480px) {
+  .blog__modal {
+    width: 400px;
+    height: 609px;
+  }
+}
+@media screen and (max-width: 748px) {
+  .blog__modal {
+    width: 400px;
+    height: 609px;
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__btn {
+  margin-top: 8px;
+  margin-left: 92%;
+  background-color: #FFFFFF;
+  border: 1px;
+  border-color: currentColor;
+}
+@media screen and (max-width: 480px) {
+  .modal__btn {
+    margin-left: 87%;
+  }
 }
 
 .footer {
@@ -1110,6 +1153,20 @@ img {
 
 .footer .container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.container_side {
+  margin-right: 44px;
+}
+@media screen and (min-width: 1200px) {
+  .container_side {
+    margin-right: 80px;
+  }
+}
+
+.container_side:last-child {
+  margin-right: 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1264,15 +1321,6 @@ img {
   }
 }
 
-.contacts__link {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-
 .footer__adress {
   font-family: "Inter";
   font-style: normal;
@@ -1314,19 +1362,143 @@ img {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__networks {
-    display: flex;
-    margin-left: 1px;
+.footer-networks {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .footer-networks {
+    display: none;
   }
+}
+
+.contacts__Email {
+  word-wrap: wrap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  .footer__networks {
-    margin-left: 74px;
+  .contacts__Email {
+    font-size: 16px;
+    line-height: 19px;
+    word-wrap: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__networks {
-    margin-left: 216px;
+
+.contacts__tel {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .contacts__tel {
+    font-size: 16px;
+    line-height: 19px;
   }
+}
+
+.modal-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-left: 16px;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .modal-title {
+    margin-left: 32px;
+    margin-top: 48px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.modal-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 16px;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+@media screen and (min-width: 768px) {
+  .modal-description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+    margin-top: 24px;
+  }
+}
+
+.modal__input-list {
+  margin-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .modal__input-list {
+    margin-left: 32px;
+  }
+}
+
+.cross-svg {
+  border: 2px solid #000000;
+  width: 16px;
+  height: 16px;
+}
+
+.modal__input {
+  width: 240px;
+  height: 35px;
+}
+@media screen and (min-width: 768px) {
+  .modal__input {
+    width: 416px;
+    height: 49px;
+  }
+}
+
+.modal__button {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  background: rgba(232, 111, 84, 0.4);
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 240px;
+  margin-top: 24px;
+  height: 37px;
+  font-size: 14px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 17px;
+}
+@media screen and (min-width: 768px) {
+  .modal__button {
+    width: 416px;
+    height: 50px;
+    margin-top: 38px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.modal-list__item {
+  margin-top: 30px;
+}
+
+.modal_content {
+  max-width: 480px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */
