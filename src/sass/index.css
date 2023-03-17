@@ -144,6 +144,16 @@ header {
   }
 }
 
+.contact__item--link {
+  border-style: none;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .contact__item--link {
+    background-color: #969494;
+  }
+}
+
 .header__open--icon {
   width: 20px;
   height: 20px;
@@ -310,7 +320,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: #E86F54;
+    background-color: #e86f54;
     padding-top: 124px;
     padding-bottom: 124px;
   }
@@ -1125,11 +1135,16 @@ img {
   height: 528px;
 }
 
-.blog__modal-close-btn {
+.modal__close-btn {
   width: 24px;
   height: 24px;
   display: block;
   border-style: none;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border: none;
+  background-color: #ffffff;
 }
 
 .blog__modal-content {
