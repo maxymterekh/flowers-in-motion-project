@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-open-modal]'),
-    closeModalBtn: document.querySelector('[data-close-modal]'),
-    backdrop: document.querySelector('[data-backdrop]'),
+    openModalBtn: document.querySelector('[data-open-contact]'),
+    closeModalBtn: document.querySelector('[data-close-contact]'),
+    backdrop: document.querySelector('[contacts-backdrop]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -11,7 +11,7 @@
   refs.backdrop.addEventListener('click', logBackdropClick);
 
   function toggleModal() {
-    refs.backdrop.classList.toggle('is-hidden');
+    refs.backdrop.classList.toggle('is-contact');
   }
 
   function logBackdropClick() {
