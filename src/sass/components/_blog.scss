@@ -157,11 +157,16 @@
   height: 528px;
 }
 
-.blog__modal-close-btn {
+.modal__close-btn {
   width: 24px;
   height: 24px;
   display: block;
   border-style: none;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border: none;
+  background-color: #ffffff;
   
 }
 
