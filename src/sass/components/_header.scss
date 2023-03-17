@@ -83,8 +83,12 @@ header {
 }
 
 .contact__item--link{
-  border-style: none;
-  background-color: #969494;
+   border-style: none;
+   background-color: #ffffff;
+   
+   @media screen and (min-width: 1200px) {
+       background-color: #969494;
+  }
 }
 
 .header__open--icon {
