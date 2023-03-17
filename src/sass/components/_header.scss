@@ -1,3 +1,7 @@
+header {
+  position: relative;
+}
+
 .navigation__item--page::after {
   @media screen and (min-width: 768px) {
     content: '';
@@ -82,12 +86,12 @@ header {
   }
 }
 
-.contact__item--link{
-   border-style: none;
-   background-color: #ffffff;
-   
-   @media screen and (min-width: 1200px) {
-       background-color: #969494;
+.contact__item--link {
+  border-style: none;
+  background-color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    background-color: #969494;
   }
 }
 
@@ -270,4 +274,99 @@ header {
   line-height: 24px;
   text-decoration: none;
   color: white;
+}
+
+.modal-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-left: 16px;
+  color: #000000;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    margin-top: 48px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+.modal-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5c5c5c;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+    margin-top: 24px;
+  }
+}
+.cross-svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-style: none;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border: none;
+  background-color: #ffffff;
+}
+.modal__input {
+  width: 240px;
+  height: 35px;
+  @media screen and (min-width: 768px) {
+    width: 416px;
+    height: 49px;
+  }
+}
+.modal__button {
+  justify-content: center;
+  align-items: center;
+  width: 336px;
+  height: 49px;
+  margin-top: 28px;
+
+  color: #ffffff;
+  background: #e86f54;
+  border-radius: 8px;
+  border-style: none;
+  font-weight: 600;
+  font-size: 18px;
+  @media screen and (mшт-width: 768px) {
+    margin-top: 38px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.modal-list__item {
+  margin-top: 30px;
+}
+.modal_content {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 300%;
+  left: 50%;
+  width: 480px;
+  height: 511px;
+  display: block;
+
+  background: #ffffff;
+}
+
+.backdrop.is-hidden2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__container{
+  margin-left: 30px;
 }
