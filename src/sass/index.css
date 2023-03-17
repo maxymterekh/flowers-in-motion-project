@@ -1102,6 +1102,16 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 320px) {
+  .carousel {
+    width: 153px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel {
+    width: 344px;
+  }
+}
 
 .blog__modal {
   position: absolute;
