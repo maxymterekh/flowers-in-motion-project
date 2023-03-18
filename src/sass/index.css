@@ -1232,19 +1232,29 @@ img {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  width: 860px;
-  height: 528px;
+  width: 588px;
+  height: 644px;
+  display: block;
   background: #ffffff;
-  display: flex;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .blog__modal {
     display: block;
+    width: 272px;
+    height: 380px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .blog__modal {
-    display: block;
+    width: 588px;
+    height: 644px;
+  }
+}
+@media screen and (min-width: 1119px) {
+  .blog__modal {
+    display: flex;
+    width: 860px;
+    height: 528px;
   }
 }
 
@@ -1262,8 +1272,37 @@ img {
 }
 
 .blog__modal-img {
-  width: 428px;
-  height: 528px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .blog__modal-img {
+    display: block;
+    width: 428px;
+    height: 528px;
+  }
+}
+
+.blog__modal-img-tab {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .blog__modal-img-tab {
+    display: block;
+    width: 588px;
+    height: 271px;
+  }
+}
+
+.blog__modal-img-mob {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .blog__modal-img-mob {
+    display: flex;
+    justify-content: center;
+    width: 272px;
+    height: 121px;
+  }
 }
 
 .modal__close-btn {
@@ -1277,10 +1316,32 @@ img {
   border: none;
   background-color: #ffffff;
 }
+@media screen and (max-width: 320px) {
+  .modal__close-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__close-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
 
 .blog__modal-content {
   display: block;
   margin-top: 111px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 320px) {
+  .blog__modal-content {
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog__modal-content {
+    margin-top: 28px;
+  }
 }
 
 .blog__modal-content-item {
@@ -1294,6 +1355,13 @@ img {
   color: #000000;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 320px) {
+  .blog__modal-title {
+    width: 240px;
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+}
 
 .blog__modal-text {
   font-weight: 400;
@@ -1303,9 +1371,17 @@ img {
   margin-bottom: 34px;
   width: 336px;
 }
+@media screen and (max-width: 320px) {
+  .blog__modal-text {
+    font-size: 12px;
+    width: 236px;
+    margin-bottom: 18px;
+  }
+}
 
 .modal__label {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__input {
@@ -1314,6 +1390,12 @@ img {
   height: 49px;
   border: 1px solid #d7d7d7;
   border-radius: 4px;
+}
+@media screen and (max-width: 320px) {
+  .modal__input {
+    width: 236px;
+    height: 35px;
+  }
 }
 
 .modal__text {
@@ -1339,6 +1421,17 @@ img {
   border-style: none;
   font-weight: 600;
   font-size: 18px;
+}
+@media screen and (max-width: 321px) {
+  .blog__modal-btn {
+    margin-top: 18px;
+    width: 236px;
+    height: 35px;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .footer {
@@ -1384,6 +1477,7 @@ img {
 }
 
 .container_side:nth-child(3) {
+  width: 148px;
   margin-right: 0px;
   margin-bottom: 32px;
 }
@@ -1395,15 +1489,23 @@ img {
 }
 
 .container_side:nth-child(4) {
+  width: 128px;
   margin-right: 44px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .container_side:nth-child(4) {
+    width: 200px;
+    margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .container_side:nth-child(4) {
     margin-right: 200px;
   }
 }
 
 .container_side:nth-child(2) {
+  width: 116px;
   margin-right: 20px;
   margin-bottom: 32px;
 }
@@ -1512,11 +1614,6 @@ img {
   margin-bottom: 0px;
 }
 
-.footer__Email {
-  width: 128px;
-  margin-bottom: 12px;
-}
-
 .footer-list-title {
   font-family: "Inter";
   font-weight: 700;
@@ -1621,10 +1718,13 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  display: block;
+  word-wrap: break-word;
   color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .contacts__Email {
+    word-wrap: normal;
     font-size: 16px;
     line-height: 19px;
   }
