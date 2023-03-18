@@ -113,12 +113,10 @@
 
   @media screen and (min-width: 320px) {
     width: 153px;
-    
   }
 
   @media screen and (min-width: 768px) {
     width: 344px;
-
   }
 }
 
@@ -131,19 +129,27 @@
   border-radius: 4px;
   top: 50%;
   left: 50%;
-
-  width: 860px;
-  height: 528px;
+  width: 588px;
+  height: 644px;
+  display: block;
 
   background: #ffffff;
-  display: flex;
 
-  @media screen and (max-width: 320px) {
-    display:  block;
+  @media screen and (min-width: 320px) {
+    display: block;
+    width: 272px;
+    height: 380px;
   }
 
-  @media screen and (max-width: 768px) {
-    display:  block;
+  @media screen and (min-width: 768px) {
+    width: 588px;
+    height: 644px;
+  }
+
+  @media screen and (min-width: 1119px) {
+    display: flex;
+    width: 860px;
+    height: 528px;
   }
 }
 
@@ -161,8 +167,33 @@
 }
 
 .blog__modal-img {
-  width: 428px;
-  height: 528px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 428px;
+    height: 528px;
+  }
+}
+
+.blog__modal-img-tab {
+  display: none;
+  @media screen and (min-width: 768px) and (max-width: 768px) {
+    display: block;
+    width: 588px;
+    height: 271px;
+  }
+}
+
+.blog__modal-img-mob {
+  display: none;
+
+  @media screen and (min-width: 320px) and (max-width: 320px) {
+    display: flex;
+    justify-content: center;
+    width: 272px;
+    height: 121px;
+  }
 }
 
 .modal__close-btn {
@@ -175,12 +206,29 @@
   right: 28px;
   border: none;
   background-color: #ffffff;
-  
+
+  @media screen and (max-width: 320px) {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media screen and (max-width: 768px) {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .blog__modal-content {
   display: block;
   margin-top: 111px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 320px) {
+    margin-top: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 28px;
+  }
 }
 
 .blog__modal-content-item {
@@ -194,6 +242,12 @@
 
   color: #000000;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 320px) {
+    width: 240px;
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
 }
 
 .blog__modal-text {
@@ -204,10 +258,16 @@
   text-align: center;
   margin-bottom: 34px;
   width: 336px;
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+    width: 236px;
+    margin-bottom: 18px;
+  }
 }
 
 .modal__label {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__input {
@@ -217,6 +277,10 @@
 
   border: 1px solid #d7d7d7;
   border-radius: 4px;
+  @media screen and (max-width: 320px) {
+    width: 236px;
+    height: 35px;
+  }
 }
 
 .modal__text {
@@ -244,4 +308,14 @@
   border-style: none;
   font-weight: 600;
   font-size: 18px;
+
+  @media screen and (max-width: 321px) {
+    margin-top: 18px;
+    width: 236px;
+    height: 35px;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
