@@ -5,7 +5,9 @@
   "homepage": "https://maxymterekh.github.io/flowers-in-motion-project/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /flowers-in-motion-projectno/"
+    "build": "parcel build src/*.html --public-url /flowers-in-motion-projectno/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
